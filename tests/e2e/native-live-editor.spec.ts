@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
+const modifier = process.platform === 'darwin' ? 'Meta' : 'Control';
 const file = pathToFileURL(resolve('native/Sources/SprigApp/Resources/Markdown/index.html')).href;
 async function start(page: any, text = '') {
   const errors: string[] = [];
@@ -29,7 +30,7 @@ test('blank note is editable, heading and bold render while typing, source stays
 
 test('formatting, source mode and undo share one document and selection', async ({ page }) => {
   const errors = await start(page, 'First line\nSecond line');
-  await page.keyboard.press('Meta+a');
+  await page.keyboard.press(`${modifier}+a`);
   await page.evaluate(() => (window as any).sprigEditor.action('bullets'));
   expect(await source(page)).toBe('- First line\n- Second line');
   await page.evaluate(() => { (window as any).sprigEditor.setMode(true); (window as any).sprigEditor.setMode(false); (window as any).sprigEditor.action('undo'); });
@@ -86,7 +87,7 @@ test('live editor uses the interface font and toggles source without losing edit
 test('inactive headings align with body text without changing Markdown source', async ({ page }) => {
   const text = Array.from({ length: 6 }, (_, i) => `${'#'.repeat(i + 1)} Aligned heading`).join('\n\n') + '\n\nAligned body';
   const errors = await start(page, text);
-  await page.keyboard.press('Meta+End');
+  await page.keyboard.press(`${modifier}+End`);
   await page.evaluate(() => document.fonts.ready);
   const starts = await page.locator('.cm-line').evaluateAll(lines => {
     const start = (line: Element) => {
@@ -114,9 +115,9 @@ test('inactive headings align with body text without changing Markdown source', 
 
 test('italic shortcut formats the selection instead of selecting the parent line', async ({ page }) => {
   await start(page, 'A line ending here');
-  await page.keyboard.press('Meta+End');
+  await page.keyboard.press(`${modifier}+End`);
   await page.keyboard.press('Shift+ArrowLeft');
-  await page.keyboard.press('Meta+i');
+  await page.keyboard.press(`${modifier}+i`);
   expect(await source(page)).toBe('A line ending her*e*');
   await expect(page.locator('.sprig-italic')).toContainText('e');
 });
@@ -134,7 +135,7 @@ test('bold remains styled when a space is typed before the closing markers', asy
 
 test('quotes display a bar and Enter on an empty quote returns to body text', async ({ page }) => {
   await start(page, '> Quoted text');
-  await page.keyboard.press('Meta+End');
+  await page.keyboard.press(`${modifier}+End`);
   await expect(page.locator('.sprig-quote-line')).toContainText('Quoted text');
   expect(await page.locator('.cm-content').innerText()).not.toContain('>');
   await page.keyboard.press('Enter');
@@ -149,17 +150,17 @@ test('quotes display a bar and Enter on an empty quote returns to body text', as
 
 test('temporary bold styling does not span intervening plain text or code', async ({ page }) => {
   await start(page, '**First** plain **Next **');
-  await page.keyboard.press('Meta+End');
+  await page.keyboard.press(`${modifier}+End`);
   const styles = await page.locator('.sprig-bold').allTextContents();
   expect(styles.join('')).not.toContain('plain');
   await page.evaluate(() => (window as any).sprigEditor.setText('`**code **`'));
-  await page.keyboard.press('Meta+End');
+  await page.keyboard.press(`${modifier}+End`);
   await expect(page.locator('.sprig-bold')).toHaveCount(0);
 });
 
 test('title handoff focuses the first body line without selecting or changing its text', async ({ page }) => {
   await start(page, 'Existing body');
-  await page.keyboard.press('Meta+End');
+  await page.keyboard.press(`${modifier}+End`);
   await page.evaluate(() => (window as any).sprigEditor.action('focus-start'));
   expect(await source(page)).toBe('Existing body');
   await expect(page.getByRole('textbox', { name: 'Note text' })).toBeFocused();
