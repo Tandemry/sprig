@@ -1,0 +1,16 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+.DS_Store
+releases/
+*.tsbuildinfo
+native/.build/
+native/.swiftpm/
+native/.derivedData/
+*.xcuserstate
+xcuserdata/
+.env
+.env.*
+!.env.example
+*.log

@@ -1,0 +1,47 @@
+const imgIconFit = "https://www.figma.com/api/mcp/asset/8681803b-c571-49fe-917d-51b3e948c40a.svg";
+const imgIconUndo = "https://www.figma.com/api/mcp/asset/574c744b-f7ba-47f3-abbb-cf45987b065f.svg";
+const imgIconRedo = "https://www.figma.com/api/mcp/asset/b48daecf-647a-4328-8d26-97b8fbc23360.svg";
+
+function SprigFitBoard({ className }: { className?: string }) {
+  return (
+    <div className={className || "bg-[rgba(255,255,255,0.7)] border border-[rgba(255,255,255,0.9)] border-solid content-stretch drop-shadow-[0px_4px_7px_rgba(36,46,38,0.1)] flex items-center px-[6px] py-[5px] relative rounded-[22px]"} data-node-id="41:698" data-name="Sprig/Fit board">
+      <div className="content-stretch flex items-center justify-center overflow-clip px-[8px] relative rounded-[16px] shrink-0 size-[32px]" data-node-id="41:695" data-name="Fit board">
+        <div className="relative shrink-0 size-[18px]" data-node-id="41:696" data-name="Icon/fit">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconFit} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function SprigViewAndHistoryLiquidGlass({ className }: { className?: string }) {
+  return (
+    <div className={className || "bg-[rgba(255,255,255,0.7)] border border-[rgba(255,255,255,0.9)] border-solid content-stretch drop-shadow-[0px_4px_7px_rgba(36,46,38,0.1)] flex gap-[4px] h-[40px] items-center px-[6px] py-[5px] relative rounded-[20px]"} data-node-id="55:3232" data-name="Sprig/View and history · Liquid Glass">
+      <div className="bg-[#dfead8] content-stretch flex h-[30px] items-center justify-center overflow-clip relative rounded-[15px] shrink-0 w-[60px]" data-node-id="55:3233" data-name="Board">
+        <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[1.45] not-italic relative shrink-0 text-[#537453] text-[12px] whitespace-nowrap" data-node-id="55:3234">
+          Board
+        </p>
+      </div>
+      <div className="content-stretch flex h-[30px] items-center justify-center overflow-clip relative rounded-[15px] shrink-0 w-[48px]" data-node-id="55:3235" data-name="List">
+        <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[1.45] not-italic relative shrink-0 text-[#454a45] text-[12px] whitespace-nowrap" data-node-id="55:3236">
+          List
+        </p>
+      </div>
+      <div className="bg-[rgba(191,201,189,0.6)] h-[18px] relative shrink-0 w-px" data-node-id="55:3237" data-name="View / history separator" />
+      <div className="content-stretch flex items-center justify-center overflow-clip px-[8px] relative rounded-[16px] shrink-0 size-[30px]" data-node-id="55:3238" data-name="Undo">
+        <div className="relative shrink-0 size-[18px]" data-node-id="55:3239" data-name="Icon/undo">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconUndo} />
+        </div>
+      </div>
+      <div className="content-stretch flex items-center justify-center overflow-clip px-[8px] relative rounded-[16px] shrink-0 size-[30px]" data-node-id="55:3241" data-name="Redo">
+        <div className="relative shrink-0 size-[18px]" data-node-id="55:3242" data-name="Icon/redo">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconRedo} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function BoardWorkspace() {
+  return <div className="bg-[#f6f7f3] content-stretch flex flex-col items-start pt-[31px] relative size-full" data-node-id="I4:3681;4363:18606;6:841" data-name="Board workspace" />;
+}

@@ -1,0 +1,53 @@
+{
+  "name": "sprig",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc -b && vite build",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "preview": "vite preview --host 127.0.0.1",
+    "desktop": "npm run build && electron .",
+    "package:mac": "npm run build && node scripts/package-desktop.mjs",
+    "native:renderer": "node native/scripts/build-markdown.mjs",
+    "native:build": "npm run native:renderer && zsh native/scripts/build.sh",
+    "native:package": "npm run native:renderer && zsh native/scripts/build.sh --package",
+    "native:test": "swift test --package-path native --build-system native --scratch-path /tmp/tandemry-sprig-swift-tests"
+  },
+  "dependencies": {
+    "@codemirror/commands": "^6.11.1",
+    "@codemirror/lang-markdown": "^6.5.2",
+    "@codemirror/language": "^6.13.1",
+    "@codemirror/state": "^6.7.6",
+    "@codemirror/view": "^6.43.15",
+    "@fontsource/google-sans-code": "^5.3.2",
+    "@fontsource/inter": "^5.2.8",
+    "@lezer/markdown": "^1.8.1",
+    "katex": "^0.19.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-markdown": "^10.1.0",
+    "rehype-katex": "^7.0.1",
+    "remark-gfm": "^4.0.1",
+    "remark-math": "^6.0.0"
+  },
+  "devDependencies": {
+    "@electron/packager": "^20.3.0",
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "electron": "^45.0.0",
+    "prettier": "^3.9.10",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.10",
+    "vitest": "^4.1.12"
+  },
+  "overrides": {
+    "katex": "^0.19.0"
+  },
+  "main": "desktop/main.cjs"
+}

@@ -1,0 +1,28 @@
+html.sprig-editing, .sprig-editing body, .sprig-editing #root { height: 100%; overflow: hidden; background: transparent !important; }
+.cm-editor { height: 100%; background: transparent; font: 13px/1.6 Inter, sans-serif; color: #292d2b; }
+.cm-editor.cm-focused { outline: none; }
+.cm-editor .cm-scroller { overflow: auto; font-family: Inter, sans-serif; }
+.cm-content { padding: 3px 0 60px; min-height: 100%; caret-color: #537453; }
+.cm-editor .cm-line { padding: 0; }
+.cm-selectionBackground, .cm-focused .cm-selectionBackground { background: #53745330 !important; }
+.cm-placeholder { color: #7e847b; }
+.sprig-bold { font-weight: 700; }
+.sprig-italic { font-style: italic; }
+.sprig-strike { text-decoration: line-through; }
+.sprig-code { font: 12px/1.6 ui-monospace, monospace; background: #ffffff40; border-radius: 3px; }
+.sprig-link { color: #537453; text-decoration: underline; }
+.sprig-marker { color: #7e847b; font-weight: 400; }
+.sprig-heading { font-weight: 700; padding-top: 8px; padding-bottom: 4px; }
+.sprig-h1 { font-size: 24px; } .sprig-h2 { font-size: 19px; } .sprig-h3 { font-size: 16px; }
+.sprig-quote { color: #537453; }
+.sprig-bullet { color: #537453; }
+.cm-line input[type=checkbox] { accent-color: #537453; margin: 0 6px 0 0; vertical-align: middle; }
+.sprig-rendered-block { padding: 6px 0; cursor: text; }
+.sprig-rendered-inline p { display: inline; margin: 0; }
+.sprig-rendered-inline img { max-width: 100%; }
+.sprig-rendered-block table { margin: 0; }
+.cm-editor .cm-cursor { border-left-color: #537453; }
+
+.cm-editor.sprig-source .cm-content { font-family: ui-monospace, monospace; font-size: 12px; }
+
+.cm-editor .cm-line.sprig-quote-line { border-left: 2px solid #53745380; padding-left: 12px; color: #537453; }

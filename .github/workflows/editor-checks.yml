@@ -1,0 +1,22 @@
+name: Editor checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  editor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm run native:renderer
+      - run: npx playwright install --with-deps chromium webkit
+      - run: npx playwright test tests/e2e/native-live-editor.spec.ts tests/e2e/native-preview.spec.ts
+      - run: npx playwright test tests/e2e/native-live-editor.spec.ts tests/e2e/native-preview.spec.ts --browser=webkit

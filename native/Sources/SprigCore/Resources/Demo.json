@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "folders": [
+    {
+      "id": "alevels",
+      "name": "A-levels",
+      "parentId": null
+    },
+    {
+      "id": "psych",
+      "name": "Psychology",
+      "parentId": "alevels"
+    },
+    {
+      "id": "social",
+      "name": "Social psychology",
+      "parentId": "psych"
+    },
+    {
+      "id": "law",
+      "name": "Law",
+      "parentId": "alevels"
+    },
+    {
+      "id": "environment",
+      "name": "Environmental Science",
+      "parentId": "alevels"
+    }
+  ],
+  "boards": [
+    {
+      "id": "conformity",
+      "title": "Conformity",
+      "folderId": "social",
+      "pinned": false,
+      "colour": "butter"
+    },
+    {
+      "id": "memory",
+      "title": "Memory",
+      "folderId": "psych",
+      "pinned": true,
+      "colour": "sage"
+    },
+    {
+      "id": "contract",
+      "title": "Contract law",
+      "folderId": "law",
+      "pinned": true,
+      "colour": "rose"
+    },
+    {
+      "id": "carbon",
+      "title": "Carbon cycle",
+      "folderId": "environment",
+      "pinned": true,
+      "colour": "lilac"
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-0",
+      "boardId": "conformity",
+      "title": "Types of conformity",
+      "markdown": "Compliance\nIdentification\nInternalisation",
+      "category": "01  /  KEY CONCEPT",
+      "meta": "3 ideas  ·  Markdown",
+      "summary": "Compliance, identification and internalisation.",
+      "colour": "butter",
+      "x": 60,
+      "y": 12,
+      "updatedAt": 1792610544208
+    },
+    {
+      "id": "note-1",
+      "boardId": "conformity",
+      "title": "Asch (1951)",
+      "markdown": "A unanimous majority can influence an individual’s judgement.\n\nWhy do people go along?",
+      "category": "02  /  KEY STUDY",
+      "meta": "Study  ·  Markdown",
+      "summary": "How a majority influences our judgement.",
+      "colour": "sage",
+      "x": 410,
+      "y": 40,
+      "updatedAt": 1792610543208
+    },
+    {
+      "id": "note-2",
+      "boardId": "conformity",
+      "title": "Think critically",
+      "markdown": "- Artificial task\n- Cultural context\n- Ethical considerations",
+      "category": "03  /  EVALUATION",
+      "meta": "AO3  ·  Markdown",
+      "summary": "Consider the strengths and limitations.",
+      "colour": "rose",
+      "x": 960,
+      "y": 2,
+      "updatedAt": 1792610539208
+    },
+    {
+      "id": "note-3",
+      "boardId": "conformity",
+      "title": "Test yourself",
+      "markdown": "What is the difference between compliance and internalisation?\n\nTry answering before looking.\n\n<details>\n<summary>Reveal answer</summary>\n\nCompliance is a public change in behaviour without a private change in belief. Internalisation involves both public and private acceptance.\n\n</details>",
+      "category": "04  /  ACTIVE RECALL",
+      "meta": "Recall prompt  ·  Answer hidden",
+      "summary": "Compliance or internalisation?",
+      "colour": "lilac",
+      "x": 95,
+      "y": 290,
+      "updatedAt": 1792610542208
+    },
+    {
+      "id": "note-4",
+      "boardId": "conformity",
+      "title": "Why do we conform?",
+      "markdown": "Normative influence: acceptance.\n\nInformational influence: accuracy.",
+      "category": "05  /  EXPLANATIONS",
+      "meta": "Compare  ·  Markdown",
+      "summary": "Acceptance, or the need to be right?",
+      "colour": "butter",
+      "x": 710,
+      "y": 250,
+      "updatedAt": 1792610541208
+    },
+    {
+      "id": "note-5",
+      "boardId": "conformity",
+      "title": "Build an argument",
+      "markdown": "Outline one explanation of conformity.\n\nLink a study to your explanation, then develop an evaluation point.",
+      "category": "06  /  EXAM PRACTICE",
+      "meta": "Essay plan  ·  Markdown",
+      "summary": "Turn an explanation into an argument.",
+      "colour": "sage",
+      "x": 1035,
+      "y": 300,
+      "updatedAt": 1792610540208
+    }
+  ],
+  "connections": []
+}

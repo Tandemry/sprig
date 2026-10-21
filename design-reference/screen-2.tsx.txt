@@ -1,0 +1,100 @@
+const imgIconBullets = "https://www.figma.com/api/mcp/asset/ffe6147c-6f6d-4ce9-b007-d44e3e3e922d.svg";
+const imgIconNumbered = "https://www.figma.com/api/mcp/asset/424d0e2a-4626-438e-9255-c949a02a4889.svg";
+const imgIconChecklist = "https://www.figma.com/api/mcp/asset/84134333-8126-4263-ae18-78abeda00b23.svg";
+const imgIconLink = "https://www.figma.com/api/mcp/asset/61ee369d-0ea6-48a6-ab55-80bdcb879da4.svg";
+const imgIconQuote = "https://www.figma.com/api/mcp/asset/79146edb-9b35-4f8a-84c4-b102f9e4328e.svg";
+const imgIconCode = "https://www.figma.com/api/mcp/asset/daa69c67-a7d5-4a85-abf8-a8c0b5becd20.svg";
+
+export default function NewButterNoteLiveMarkdown() {
+  return (
+    <div className="bg-[var(--color\/yellow,#fbf0bf)] content-stretch drop-shadow-[0px_14px_19px_rgba(41,51,38,0.19)] flex flex-col gap-[18px] items-start px-[30px] py-[24px] relative rounded-[14px] size-full" data-node-id="24:650" data-name="New butter note · Live Markdown">
+      <div className="content-stretch flex gap-[8px] h-[22px] items-center overflow-clip relative shrink-0 w-[460px]" data-node-id="24:651" data-name="Note header">
+        <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[1.45] not-italic relative shrink-0 text-[#737974] text-[11px] whitespace-nowrap" data-node-id="24:652">
+          NEW NOTE
+        </p>
+        <div className="flex-[1_0_0] h-px min-w-px relative" data-node-id="24:653" data-name="Space" />
+        <button className="content-stretch cursor-pointer flex items-center justify-center overflow-clip relative shrink-0 size-[24px]" data-node-id="24:654" data-name="Return to board">
+          <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[1.45] not-italic relative shrink-0 text-[#737974] text-[16px] text-left whitespace-nowrap" data-node-id="24:655">
+            ×
+          </p>
+        </button>
+      </div>
+      <div className="content-stretch flex flex-col gap-[14px] h-[278px] items-start overflow-clip relative shrink-0 w-[460px]" data-node-id="24:657" data-name="Write directly on the note">
+        <p className="[word-break:break-word] font-['Inter:Bold'] font-bold leading-[1.45] not-italic relative shrink-0 text-[#292d2b] text-[24px] w-[460px]" data-node-id="24:658">
+          Why do we conform?
+        </p>
+        <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[1.45] not-italic relative shrink-0 text-[#292d2b] text-[16px] w-[460px]" data-node-id="24:659">
+          Normative social influence
+        </p>
+        <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[1.45] not-italic relative shrink-0 text-[#292d2b] text-[13px] w-[450px]" data-node-id="24:660">
+          We conform because we want to be accepted by the group.
+        </p>
+        <div className="content-stretch flex gap-[2px] h-[30px] items-center overflow-clip relative shrink-0 w-[460px]" data-node-id="24:661" data-name="Active Markdown line">
+          <p className="[word-break:break-word] font-['Google_Sans_Code:Regular'] font-normal leading-[1.45] relative shrink-0 text-[#537453] text-[10.5px] whitespace-nowrap" data-node-id="24:662">
+            **Informational influence**
+          </p>
+          <div className="bg-[#537453] h-[18px] relative shrink-0 w-[1.5px]" data-node-id="24:663" data-name="Text insertion caret" />
+        </div>
+        <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[1.45] not-italic relative shrink-0 text-[#292d2b] text-[13px] w-[450px]" data-node-id="24:664">
+          When we are unsure, we look to others for the correct answer.
+        </p>
+      </div>
+      <div className="content-stretch flex gap-[8px] h-[24px] items-center overflow-clip relative shrink-0 w-[460px]" data-node-id="24:665" data-name="Markdown status">
+        <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[1.45] not-italic relative shrink-0 text-[#737974] text-[11px] whitespace-nowrap" data-node-id="24:666">
+          Markdown
+        </p>
+        <div className="flex-[1_0_0] h-px min-w-px relative" data-node-id="24:667" data-name="Space" />
+        <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[1.45] not-italic relative shrink-0 text-[#737974] text-[11px] whitespace-pre" data-node-id="24:668">{`Live preview  ·  Saved`}</p>
+      </div>
+      <div className="absolute bg-[rgba(255,255,255,0.65)] border border-[rgba(255,255,255,0.95)] border-solid content-stretch drop-shadow-[0px_5px_10px_rgba(41,51,43,0.12)] flex flex-col gap-[4px] h-[382px] items-start left-[-72px] px-[10px] py-[8px] rounded-[28px] top-[69px] w-[56px]" data-node-id="37:519" data-name="Sprig/Note formatting · Liquid Glass">
+        <div className="bg-[rgba(224,235,216,0.9)] content-stretch flex items-center justify-center overflow-clip relative rounded-[18px] shrink-0 size-[36px]" data-node-id="I37:519;37:488" data-name="Bold">
+          <p className="[word-break:break-word] font-['Inter:Bold'] font-bold leading-[normal] not-italic relative shrink-0 text-[#537453] text-[18px] whitespace-nowrap" data-node-id="I37:519;37:489">
+            B
+          </p>
+        </div>
+        <div className="content-stretch flex items-center justify-center overflow-clip relative rounded-[18px] shrink-0 size-[36px]" data-node-id="I37:519;37:490" data-name="Italic">
+          <p className="[word-break:break-word] font-['Inter:Italic'] font-normal italic leading-[normal] relative shrink-0 text-[#414942] text-[18px] whitespace-nowrap" data-node-id="I37:519;37:491">
+            I
+          </p>
+        </div>
+        <div className="content-stretch flex items-center justify-center overflow-clip relative rounded-[18px] shrink-0 size-[36px]" data-node-id="I37:519;37:492" data-name="Heading">
+          <p className="[word-break:break-word] font-['Inter:Bold'] font-bold leading-[normal] not-italic relative shrink-0 text-[#414942] text-[16px] whitespace-nowrap" data-node-id="I37:519;37:493">
+            H
+          </p>
+        </div>
+        <div className="bg-[rgba(215,222,214,0.7)] h-px relative shrink-0 w-[36px]" data-node-id="I37:519;37:494" data-name="Formatting group divider" />
+        <div className="content-stretch flex items-center justify-center overflow-clip relative rounded-[18px] shrink-0 size-[36px]" data-node-id="I37:519;37:495" data-name="Bullets">
+          <div className="relative shrink-0 size-[19px]" data-node-id="I37:519;37:496" data-name="Icon/Bullets">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconBullets} />
+          </div>
+        </div>
+        <div className="content-stretch flex items-center justify-center overflow-clip relative rounded-[18px] shrink-0 size-[36px]" data-node-id="I37:519;37:501" data-name="Numbered">
+          <div className="relative shrink-0 size-[19px]" data-node-id="I37:519;37:502" data-name="Icon/Numbered">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconNumbered} />
+          </div>
+        </div>
+        <div className="content-stretch flex items-center justify-center overflow-clip relative rounded-[18px] shrink-0 size-[36px]" data-node-id="I37:519;37:504" data-name="Checklist">
+          <div className="relative shrink-0 size-[19px]" data-node-id="I37:519;37:505" data-name="Icon/Checklist">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconChecklist} />
+          </div>
+        </div>
+        <div className="bg-[rgba(215,222,214,0.7)] h-px relative shrink-0 w-[36px]" data-node-id="I37:519;37:509" data-name="Formatting group divider" />
+        <div className="content-stretch flex items-center justify-center overflow-clip relative rounded-[18px] shrink-0 size-[36px]" data-node-id="I37:519;37:510" data-name="Link">
+          <div className="relative shrink-0 size-[19px]" data-node-id="I37:519;37:511" data-name="Icon/Link">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconLink} />
+          </div>
+        </div>
+        <div className="content-stretch flex items-center justify-center overflow-clip relative rounded-[18px] shrink-0 size-[36px]" data-node-id="I37:519;37:513" data-name="Quote">
+          <div className="relative shrink-0 size-[19px]" data-node-id="I37:519;37:514" data-name="Icon/Quote">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconQuote} />
+          </div>
+        </div>
+        <div className="content-stretch flex items-center justify-center overflow-clip relative rounded-[18px] shrink-0 size-[36px]" data-node-id="I37:519;37:516" data-name="Code">
+          <div className="relative shrink-0 size-[19px]" data-node-id="I37:519;37:517" data-name="Icon/Code">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconCode} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

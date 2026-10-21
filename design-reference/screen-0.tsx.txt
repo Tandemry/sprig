@@ -1,0 +1,69 @@
+const imgIconBoard = "https://www.figma.com/api/mcp/asset/ba53f886-7880-43ac-92ee-69b44b70f6e2.svg";
+const imgIconHome = "https://www.figma.com/api/mcp/asset/63c82fa3-2540-4d7e-acf0-f91fa729b33b.svg";
+const imgIconBoards = "https://www.figma.com/api/mcp/asset/b32e3627-b62f-446e-89c9-d8538a53f61b.svg";
+const imgIconLibrary = "https://www.figma.com/api/mcp/asset/5b495bb5-ec34-4728-854c-128c7732e545.svg";
+const imgIconSearch = "https://www.figma.com/api/mcp/asset/7d2218ee-611d-4201-ac15-4573a8e8ae77.svg";
+
+function SprigHomePinnedBoard({ className }: { className?: string }) {
+  return (
+    <div className={className || "bg-[var(--color\\/paper,white)] content-stretch flex gap-[14px] h-[82px] items-center p-[14px] relative rounded-[16px] w-[430px]"} data-node-id="58:3795" data-name="Sprig/Home pinned board">
+      <div className="bg-[var(--color\/sage,#e6eedb)] content-stretch flex items-center justify-center overflow-clip relative rounded-[10px] shrink-0 size-[54px]" data-node-id="58:3796" data-name="Board thumbnail">
+        <div className="relative shrink-0 size-[22px]" data-node-id="59:3415" data-name="Icon/Board">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconBoard} />
+        </div>
+      </div>
+      <div className="[word-break:break-word] content-stretch flex flex-col gap-[3px] h-[54px] items-start justify-center leading-[1.45] not-italic overflow-clip relative shrink-0 w-[280px]" data-node-id="58:3797" data-name="Board details">
+        <p className="font-['Inter:Semi_Bold'] font-semibold relative shrink-0 text-[16px] text-[color:var(--color\/ink,#292d2b)] whitespace-nowrap" data-node-id="58:3798">
+          Memory
+        </p>
+        <p className="font-['Inter:Regular'] font-normal relative shrink-0 text-[11px] text-[color:var(--color\/muted,#737974)] whitespace-pre" data-node-id="58:3799">{`Psychology  ·  8 notes`}</p>
+      </div>
+      <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[1.45] not-italic relative shrink-0 text-[12px] text-[color:var(--color\/muted,#737974)] whitespace-nowrap" data-node-id="58:3800">
+        ↗
+      </p>
+    </div>
+  );
+}
+
+function SprigGlassNavigationHome({ className }: { className?: string }) {
+  return (
+    <div className={className || "bg-[rgba(255,255,255,0.58)] border border-[rgba(255,255,255,0.95)] border-solid content-stretch drop-shadow-[0px_5px_9px_rgba(38,51,41,0.1)] flex gap-[4px] h-[60px] items-start p-[6px] relative rounded-[30px] w-[400px]"} data-node-id="58:3731" data-name="Sprig/Glass navigation · Home">
+      <div className="bg-[rgba(221,233,214,0.8)] border border-[rgba(255,255,255,0.85)] border-solid content-stretch flex flex-col gap-[2px] h-[48px] items-center justify-center overflow-clip relative rounded-[24px] shrink-0 w-[94px]" data-node-id="58:3732" data-name="Home">
+        <div className="relative shrink-0 size-[20px]" data-node-id="58:3733" data-name="Icon/Home">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconHome} />
+        </div>
+        <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[1.45] not-italic relative shrink-0 text-[11px] text-[color:var(--color\/accent,#537453)] whitespace-nowrap" data-node-id="58:3735">
+          Home
+        </p>
+      </div>
+      <a className="content-stretch cursor-pointer flex flex-col gap-[2px] h-[48px] items-center justify-center overflow-clip relative rounded-[24px] shrink-0 w-[94px]" data-node-id="58:3736" data-name="Boards">
+        <div className="relative shrink-0 size-[20px]" data-node-id="58:3737" data-name="Icon/Boards">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconBoards} />
+        </div>
+        <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[1.45] not-italic relative shrink-0 text-[11px] text-[color:var(--color\/ink,#292d2b)] text-left whitespace-nowrap" data-node-id="58:3742">
+          Boards
+        </p>
+      </a>
+      <div className="content-stretch flex flex-col gap-[2px] h-[48px] items-center justify-center overflow-clip relative rounded-[24px] shrink-0 w-[94px]" data-node-id="58:3743" data-name="Library">
+        <div className="relative shrink-0 size-[20px]" data-node-id="58:3744" data-name="Icon/Library">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconLibrary} />
+        </div>
+        <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[1.45] not-italic relative shrink-0 text-[11px] text-[color:var(--color\/ink,#292d2b)] whitespace-nowrap" data-node-id="58:3748">
+          Library
+        </p>
+      </div>
+      <div className="content-stretch flex flex-col gap-[2px] h-[48px] items-center justify-center overflow-clip relative rounded-[24px] shrink-0 w-[94px]" data-node-id="58:3749" data-name="Search">
+        <div className="relative shrink-0 size-[20px]" data-node-id="58:3750" data-name="Icon/Search">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconSearch} />
+        </div>
+        <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[1.45] not-italic relative shrink-0 text-[11px] text-[color:var(--color\/ink,#292d2b)] whitespace-nowrap" data-node-id="58:3753">
+          Search
+        </p>
+      </div>
+    </div>
+  );
+}
+
+export default function BoardWorkspace() {
+  return <div className="bg-[#f6f7f3] content-stretch flex flex-col items-start pt-[31px] relative size-full" data-node-id="I58:3541;4363:18606;58:3543" data-name="Board workspace" />;
+}
